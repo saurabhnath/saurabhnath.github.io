@@ -1,246 +1,63 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
 
-    <script type="text/javascript">
-        function change_color(box) {
-        var property = document.getElementById(box);
-        if (property.className !== 'toggled') {
-          property.style.backgroundColor="darkorange"; /*changing color*/
-          property.className = 'toggled'
-        }
-        else {
-          property.style.backgroundColor = "rgba(255, 255, 255,.1)"; /*color after change*/
-          property.className = '';
-        }
-      }
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172973967-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <style media="screen">
-    html{
-      height:100%;
+    function gtag() {
+      dataLayer.push(arguments);
     }
+    gtag('js', new Date());
+    gtag('config', 'UA-172973967-1');
+  </script>
 
-    body{
-      height:100%;
-      width:100%;
-      padding:0;
-      margin:0;
-      background-color: black;
-    }
-
-    .center{
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-align : center;
-      -moz-box-align    : center;
-      -ms-flex-align    : center;
-      -webkit-align-items : center;
-      align-items : center ;
-      justify-content : center;
-      -webkit-justify-content : center;
-      -webkit-box-pack : center;
-      -moz-box-pack : center;
-      -ms-flex-pack : center;
-    }
-
-    /* make a grid container */
-    .grid-container{
-      display: grid;
-      height:90%;
-      width:90%;
-      grid-template-columns: 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
-      grid-template-rows:    7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7% 7%;
-      justify-content: space-evenly;
-      align-content: space-evenly;
-      background-color: black;
-    }
+  <!-- NOTE: common header elements -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/css/master.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/assets/logo/qtrino.ico">
 
 
-    .grid-container > div{
-      background-color: rgba(255, 255, 255, .1);
-      text-align: center;
-    }
-    </style>
-    <title>BOX</title>
-  </head>
-  <body class="center">
-    <div class="grid-container">
+  <!-- IDEA: Title ,Description, Keyword -->
+  <title>Qtrino</title>
+  <meta name="description" content="Qtrino provides you the learning contents on Science &
+    Technology, primarily on Electronics and computing. Qtrino Product review helps you finding the best product
+    available on the online market in the smartest way">
+  <meta name="keywords" content="qtrino, qtrino academy, qtrino discovery">
 
-      <div id="box1" onclick="change_color('box1');">1</div>
-      <div id="box2" onclick="change_color('box2');">2</div>
-      <div id="box3" onclick="change_color('box3');">3</div>
-      <div id="box4" onclick="change_color('box4');">4</div>
-      <div id="box5" onclick="change_color('box5');">5</div>
-      <div id="box6" onclick="change_color('box6');">6</div>
-      <div id="box7" onclick="change_color('box7');">7</div>
-      <div id="box8" onclick="change_color('box8');">8</div>
-      <div id="box9" onclick="change_color('box9');">9</div>
-      <div id="box10" onclick="change_color('box10');">10</div>
-      <div id="box11" onclick="change_color('box11');">11</div>
-      <div id="box12" onclick="change_color('box12');">12</div>
-      <div id="box13" onclick="change_color('box13');">13</div>
-      <div id="box14" onclick="change_color('box14');">2</div>
-      <div id="box15" onclick="change_color('box15');"></div>
-      <div id="box16" onclick="change_color('box16');"></div>
-      <div id="box17" onclick="change_color('box17');"></div>
-      <div id="box18" onclick="change_color('box18');"></div>
-      <div id="box19" onclick="change_color('box19');"></div>
-      <div id="box20" onclick="change_color('box20');"></div>
-      <div id="box21" onclick="change_color('box21');"></div>
-      <div id="box22" onclick="change_color('box22');"></div>
-      <div id="box23" onclick="change_color('box23');"></div>
-      <div id="box24" onclick="change_color('box24');"></div>
-      <div id="box25" onclick="change_color('box25');"></div>
-      <div id="box26" onclick="change_color('box26');"></div>
-      <div id="box27" onclick="change_color('box27');">3</div>
-      <div id="box28" onclick="change_color('box28');"></div>
-      <div id="box29" onclick="change_color('box29');"></div>
-      <div id="box30" onclick="change_color('box30');"></div>
-      <div id="box31" onclick="change_color('box31');"></div>
-      <div id="box32" onclick="change_color('box32');"></div>
-      <div id="box33" onclick="change_color('box33');"></div>
-      <div id="box34" onclick="change_color('box34');"></div>
-      <div id="box35" onclick="change_color('box35');"></div>
-      <div id="box36" onclick="change_color('box36');"></div>
-      <div id="box37" onclick="change_color('box37');"></div>
-      <div id="box38" onclick="change_color('box38');"></div>
-      <div id="box39" onclick="change_color('box39');"></div>
-      <div id="box40" onclick="change_color('box40');">4</div>
-      <div id="box41" onclick="change_color('box41');"></div>
-      <div id="box42" onclick="change_color('box42');"></div>
-      <div id="box43" onclick="change_color('box43');"></div>
-      <div id="box44" onclick="change_color('box44');"></div>
-      <div id="box45" onclick="change_color('box45');"></div>
-      <div id="box46" onclick="change_color('box46');"></div>
-      <div id="box47" onclick="change_color('box47');"></div>
-      <div id="box48" onclick="change_color('box48');"></div>
-      <div id="box49" onclick="change_color('box49');"></div>
-      <div id="box50" onclick="change_color('box50');"></div>
-      <div id="box51" onclick="change_color('box51');"></div>
-      <div id="box52" onclick="change_color('box52');"></div>
-      <div id="box53" onclick="change_color('box53');">5</div>
-      <div id="box54" onclick="change_color('box54');"></div>
-      <div id="box55" onclick="change_color('box55');"></div>
-      <div id="box56" onclick="change_color('box56');"></div>
-      <div id="box57" onclick="change_color('box57');"></div>
-      <div id="box58" onclick="change_color('box58');"></div>
-      <div id="box59" onclick="change_color('box59');"></div>
-      <div id="box60" onclick="change_color('box60');"></div>
-      <div id="box61" onclick="change_color('box61');"></div>
-      <div id="box62" onclick="change_color('box62');"></div>
-      <div id="box63" onclick="change_color('box63');"></div>
-      <div id="box64" onclick="change_color('box64');"></div>
-      <div id="box65" onclick="change_color('box65');"></div>
-      <div id="box66" onclick="change_color('box66');">6</div>
-      <div id="box67" onclick="change_color('box67');"></div>
-      <div id="box68" onclick="change_color('box68');"></div>
-      <div id="box69" onclick="change_color('box69');"></div>
-      <div id="box70" onclick="change_color('box70');"></div>
-      <div id="box71" onclick="change_color('box71');"></div>
-      <div id="box72" onclick="change_color('box72');"></div>
-      <div id="box73" onclick="change_color('box73');"></div>
-      <div id="box74" onclick="change_color('box74');"></div>
-      <div id="box75" onclick="change_color('box75');"></div>
-      <div id="box76" onclick="change_color('box76');"></div>
-      <div id="box77" onclick="change_color('box77');"></div>
-      <div id="box78" onclick="change_color('box78');"></div>
-      <div id="box79" onclick="change_color('box79');">7</div>
-      <div id="box80" onclick="change_color('box80');"></div>
-      <div id="box81" onclick="change_color('box81');"></div>
-      <div id="box82" onclick="change_color('box82');"></div>
-      <div id="box83" onclick="change_color('box83');"></div>
-      <div id="box84" onclick="change_color('box84');"></div>
-      <div id="box85" onclick="change_color('box85');"></div>
-      <div id="box86" onclick="change_color('box86');"></div>
-      <div id="box87" onclick="change_color('box87');"></div>
-      <div id="box88" onclick="change_color('box88');"></div>
-      <div id="box89" onclick="change_color('box89');"></div>
-      <div id="box90" onclick="change_color('box90');"></div>
-      <div id="box91" onclick="change_color('box91');"></div>
-      <div id="box92" onclick="change_color('box92');">8</div>
-      <div id="box93" onclick="change_color('box93');"></div>
-      <div id="box94" onclick="change_color('box94');"></div>
-      <div id="box95" onclick="change_color('box95');"></div>
-      <div id="box96" onclick="change_color('box96');"></div>
-      <div id="box97" onclick="change_color('box97');"></div>
-      <div id="box98" onclick="change_color('box98');"></div>
-      <div id="box99" onclick="change_color('box99');"></div>
-      <div id="box100" onclick="change_color('box100');"></div>
-      <div id="box101" onclick="change_color('box101');"></div>
-      <div id="box102" onclick="change_color('box102');"></div>
-      <div id="box103" onclick="change_color('box103');"></div>
-      <div id="box104" onclick="change_color('box104');"></div>
-      <div id="box105" onclick="change_color('box105');">9</div>
-      <div id="box106" onclick="change_color('box106');"></div>
-      <div id="box107" onclick="change_color('box107');"></div>
-      <div id="box108" onclick="change_color('box108');"></div>
-      <div id="box109" onclick="change_color('box109');"></div>
-      <div id="box110" onclick="change_color('box110');"></div>
-      <div id="box111" onclick="change_color('box111');"></div>
-      <div id="box112" onclick="change_color('box112');"></div>
-      <div id="box113" onclick="change_color('box113');"></div>
-      <div id="box114" onclick="change_color('box114');"></div>
-      <div id="box115" onclick="change_color('box115');"></div>
-      <div id="box116" onclick="change_color('box116');"></div>
-      <div id="box117" onclick="change_color('box117');"></div>
-      <div id="box118" onclick="change_color('box118');">10</div>
-      <div id="box119" onclick="change_color('box119');"></div>
-      <div id="box120" onclick="change_color('box120');"></div>
-      <div id="box121" onclick="change_color('box121');"></div>
-      <div id="box122" onclick="change_color('box122');"></div>
-      <div id="box123" onclick="change_color('box123');"></div>
-      <div id="box124" onclick="change_color('box124');"></div>
-      <div id="box125" onclick="change_color('box125');"></div>
-      <div id="box126" onclick="change_color('box126');"></div>
-      <div id="box127" onclick="change_color('box127');"></div>
-      <div id="box128" onclick="change_color('box128');"></div>
-      <div id="box129" onclick="change_color('box129');"></div>
-      <div id="box130" onclick="change_color('box130');"></div>
-      <div id="box131" onclick="change_color('box131');">11</div>
-      <div id="box132" onclick="change_color('box132');"></div>
-      <div id="box133" onclick="change_color('box133');"></div>
-      <div id="box134" onclick="change_color('box134');"></div>
-      <div id="box135" onclick="change_color('box135');"></div>
-      <div id="box136" onclick="change_color('box136');"></div>
-      <div id="box137" onclick="change_color('box137');"></div>
-      <div id="box138" onclick="change_color('box138');"></div>
-      <div id="box139" onclick="change_color('box139');"></div>
-      <div id="box140" onclick="change_color('box140');"></div>
-      <div id="box141" onclick="change_color('box141');"></div>
-      <div id="box142" onclick="change_color('box142');"></div>
-      <div id="box143" onclick="change_color('box143');"></div>
-      <div id="box144" onclick="change_color('box144');">12</div>
-      <div id="box145" onclick="change_color('box145');"></div>
-      <div id="box146" onclick="change_color('box146');"></div>
-      <div id="box147" onclick="change_color('box147');"></div>
-      <div id="box148" onclick="change_color('box148');"></div>
-      <div id="box149" onclick="change_color('box149');"></div>
-      <div id="box150" onclick="change_color('box150');"></div>
-      <div id="box151" onclick="change_color('box151');"></div>
-      <div id="box152" onclick="change_color('box152');"></div>
-      <div id="box153" onclick="change_color('box153');"></div>
-      <div id="box154" onclick="change_color('box154');"></div>
-      <div id="box155" onclick="change_color('box155');"></div>
-      <div id="box156" onclick="change_color('box156');"></div>
-      <div id="box157" onclick="change_color('box157');">13</div>
-      <div id="box158" onclick="change_color('box158');"></div>
-      <div id="box159" onclick="change_color('box159');"></div>
-      <div id="box160" onclick="change_color('box160');"></div>
-      <div id="box161" onclick="change_color('box161');"></div>
-      <div id="box162" onclick="change_color('box162');"></div>
-      <div id="box163" onclick="change_color('box163');"></div>
-      <div id="box164" onclick="change_color('box164');"></div>
-      <div id="box165" onclick="change_color('box165');"></div>
-      <div id="box166" onclick="change_color('box166');"></div>
-      <div id="box167" onclick="change_color('box167');"></div>
-      <div id="box168" onclick="change_color('box168');"></div>
-      <div id="box169" onclick="change_color('box169');"></div>
+  <!-- IDEA: Current page-->
+  <div id="current">home</div>
+</head>
+<!-- NOTE: end of head NOTE: end of head NOTE: end of head NOTE: end of head-->
+<!-- NOTE: start body  NOTE: start body  NOTE: start body  NOTE: start body -->
+<body>
+  <nav id="nav"></nav>
+  <div class="main" style="padding-top:0px;">
+    <!-- NOTE: main main main main main main main main main main main main main -->
 
+    <div class="fi" style="background-image:url('/img/bg/bg5.jpg')">
+      <div class="fi-txt"style="color:white" >
+        <h1>QTRINO</h1>
+        <h2 class="">A walk towards the future</h2>
+        <p>Always stay updated with us </p>
+        <button>Qtrino Academy</button>
+        <button>Qtrino Discovery</button>
+        <button style="background-color:Tomato">Qtrino Technology</button>
+      </div>
     </div>
-  </body>
+
+
+    <!-- NOTE: **************************************************************** -->
+  </div>
+  <div id="gotop" class="gotop"></div>
+  <footer id="foot"></footer>
+  <div id="copyright" class="copyright"></div>
+  <script src="/assets/nav-foot-common.js"></script>
+</body>
+
 </html>
